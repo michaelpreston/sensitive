@@ -15,13 +15,11 @@ let mainWindow;
 function createWindow () {
 
   setTimeout(function() {
-
-    app.dock.setIcon(electron.nativeImage.createFromPath(path.resolve('./sense/installedPlugins/sense/public/logo128.png')));
-
     // Create the browser window.
     mainWindow = new BrowserWindow({
       width: 1300,
-      height: 800
+      height: 800,
+      icon: './sense/installedPlugins/sense/public/logo128.png'
     });
 
     // and load the index.html of the app.
